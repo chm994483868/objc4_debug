@@ -15,7 +15,9 @@ int main(int argc, const char * argv[]) {
         NSObject *objc1 = [[NSObject alloc] init];
         LGPerson *objc2 = [[LGPerson alloc] init];
 
-        NSLog(@"Hello, World! %@ - %@",objc1,objc2);
+        NSLog(@"🎉🎉🎉 Hello, World! \nobjc1 = %@ \nobjc2 = %@ \n",objc1, objc2);
+        
+        
     }
     return 0;
 }
