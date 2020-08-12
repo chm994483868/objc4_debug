@@ -6,18 +6,27 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LGPerson.h"
+#import "HHManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         
-        NSObject *objc1 = [[NSObject alloc] init];
-        LGPerson *objc2 = [[LGPerson alloc] init];
-
-        NSLog(@"🎉🎉🎉 Hello, World! \nobjc1 = %@ \nobjc2 = %@ \n",objc1, objc2);
+        // 创建实例对象
+//        HHManager *mgr = [[HHManager alloc] init];
+//        NSLog(@"🎉🎉🎉 Hello, World! \n mgr = %@ \n", mgr);
         
+        HHStaff *staffA = [[HHStaff alloc] init];
+        HHStaff *staffB = [[HHStaff alloc] init];
         
+        NSLog(@"❤️❤️❤️ 实例对象: staffA = %p - staffB = %p \n", staffA, staffB);
+        
+        Class staffClassA = [staffA class];
+        Class staffClassB = object_getClassName(staffB);
+        Class staffClassC = [HHStaff class];
+        
+        NSLog(@"类对象： %p - %p - %p", staffClassA, staffClassB, staffClassC);
     }
+    
     return 0;
 }

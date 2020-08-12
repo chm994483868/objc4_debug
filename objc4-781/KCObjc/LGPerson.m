@@ -12,7 +12,6 @@
 - (NSString *)description {
     NSLog(@"self = %@", self);
     return @"LGPerson";
-    
 //    return [NSString stringWithFormat:@"%@", self];
 }
 

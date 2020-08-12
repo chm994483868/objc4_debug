@@ -131,6 +131,8 @@
 		87BB4EA70EC39854005D08E1 /* objc-probes.d in Sources */ = {isa = PBXBuildFile; fileRef = 87BB4E900EC39633005D08E1 /* objc-probes.d */; };
 		9672F7EE14D5F488007CEC96 /* NSObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672F7ED14D5F488007CEC96 /* NSObject.mm */; };
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
+		D2E526CD24E3F7B700ACD06F /* HHStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526CC24E3F7B700ACD06F /* HHStaff.m */; };
+		D2E526D024E3F84C00ACD06F /* HHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526CF24E3F84C00ACD06F /* HHManager.m */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		F9BCC71B205C68E800DD9AFC /* objc-blocktramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 8379996D13CBAF6F007C2B5F /* objc-blocktramps-arm64.s */; };
 /* End PBXBuildFile section */
@@ -272,6 +274,10 @@
 		BC8B5D1212D3D48100C78A5B /* libauto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauto.dylib; path = /usr/lib/libauto.dylib; sourceTree = "<absolute>"; };
 		C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DenseMapExtras.h; path = runtime/DenseMapExtras.h; sourceTree = "<group>"; };
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E526CB24E3F7B700ACD06F /* HHStaff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStaff.h; sourceTree = "<group>"; };
+		D2E526CC24E3F7B700ACD06F /* HHStaff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStaff.m; sourceTree = "<group>"; };
+		D2E526CE24E3F84C00ACD06F /* HHManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHManager.h; sourceTree = "<group>"; };
+		D2E526CF24E3F84C00ACD06F /* HHManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHManager.m; sourceTree = "<group>"; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-block-trampolines.mm"; path = "runtime/objc-block-trampolines.mm"; sourceTree = "<group>"; };
@@ -389,6 +395,10 @@
 				7A88076024CACD200070C15B /* main.m */,
 				7A88076524CACD8C0070C15B /* LGPerson.h */,
 				7A88076624CACD8C0070C15B /* LGPerson.m */,
+				D2E526CB24E3F7B700ACD06F /* HHStaff.h */,
+				D2E526CC24E3F7B700ACD06F /* HHStaff.m */,
+				D2E526CE24E3F84C00ACD06F /* HHManager.h */,
+				D2E526CF24E3F84C00ACD06F /* HHManager.m */,
 			);
 			path = KCObjc;
 			sourceTree = "<group>";
@@ -728,6 +738,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E526CD24E3F7B700ACD06F /* HHStaff.m in Sources */,
+				D2E526D024E3F84C00ACD06F /* HHManager.m in Sources */,
 				7A88076124CACD200070C15B /* main.m in Sources */,
 				7A88076724CACD8C0070C15B /* LGPerson.m in Sources */,
 			);
