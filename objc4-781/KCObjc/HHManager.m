@@ -9,4 +9,12 @@
 
 @implementation HHManager
 
+- (void)doInstanceManagerWork { // 对象方法
+    NSLog(@"📢📢📢 %s", __FUNCTION__);
+}
+
++ (void)doClassManagerWork { // 类方法
+    NSLog(@"📢📢📢 %s", __FUNCTION__);
+}
+
 @end

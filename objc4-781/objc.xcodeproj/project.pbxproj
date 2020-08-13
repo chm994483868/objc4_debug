@@ -401,6 +401,7 @@
 		7A88075F24CACD200070C15B /* KCObjc */ = {
 			isa = PBXGroup;
 			children = (
+				D2E526DC24E53F6E00ACD06F /* Forward */,
 				7A88076024CACD200070C15B /* main.m */,
 				7A88076524CACD8C0070C15B /* LGPerson.h */,
 				7A88076624CACD8C0070C15B /* LGPerson.m */,
@@ -408,12 +409,6 @@
 				D2E526CC24E3F7B700ACD06F /* HHStaff.m */,
 				D2E526CE24E3F84C00ACD06F /* HHManager.h */,
 				D2E526CF24E3F84C00ACD06F /* HHManager.m */,
-				D2E526D224E4BD1D00ACD06F /* TestMessage.h */,
-				D2E526D324E4BD1D00ACD06F /* TestMessage.m */,
-				D2E526D524E4C84300ACD06F /* BackupTestMessage.h */,
-				D2E526D624E4C84300ACD06F /* BackupTestMessage.m */,
-				D2E526D924E511D700ACD06F /* BackupTestMessageOther.h */,
-				D2E526DA24E511D700ACD06F /* BackupTestMessageOther.m */,
 			);
 			path = KCObjc;
 			sourceTree = "<group>";
@@ -517,6 +512,19 @@
 				6EACB841232C97A400CE9176 /* objc-zalloc.h */,
 			);
 			name = "Project Headers";
+			sourceTree = "<group>";
+		};
+		D2E526DC24E53F6E00ACD06F /* Forward */ = {
+			isa = PBXGroup;
+			children = (
+				D2E526D224E4BD1D00ACD06F /* TestMessage.h */,
+				D2E526D324E4BD1D00ACD06F /* TestMessage.m */,
+				D2E526D524E4C84300ACD06F /* BackupTestMessage.h */,
+				D2E526D624E4C84300ACD06F /* BackupTestMessage.m */,
+				D2E526D924E511D700ACD06F /* BackupTestMessageOther.h */,
+				D2E526DA24E511D700ACD06F /* BackupTestMessageOther.m */,
+			);
+			path = Forward;
 			sourceTree = "<group>";
 		};
 		F9BCC72A205C6A1600DD9AFC /* Frameworks */ = {
