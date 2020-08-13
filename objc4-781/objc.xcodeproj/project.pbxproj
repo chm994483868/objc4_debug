@@ -133,6 +133,9 @@
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
 		D2E526CD24E3F7B700ACD06F /* HHStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526CC24E3F7B700ACD06F /* HHStaff.m */; };
 		D2E526D024E3F84C00ACD06F /* HHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526CF24E3F84C00ACD06F /* HHManager.m */; };
+		D2E526D424E4BD1D00ACD06F /* TestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526D324E4BD1D00ACD06F /* TestMessage.m */; };
+		D2E526D724E4C84300ACD06F /* BackupTestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526D624E4C84300ACD06F /* BackupTestMessage.m */; };
+		D2E526DB24E511D700ACD06F /* BackupTestMessageOther.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526DA24E511D700ACD06F /* BackupTestMessageOther.m */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		F9BCC71B205C68E800DD9AFC /* objc-blocktramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 8379996D13CBAF6F007C2B5F /* objc-blocktramps-arm64.s */; };
 /* End PBXBuildFile section */
@@ -278,6 +281,12 @@
 		D2E526CC24E3F7B700ACD06F /* HHStaff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStaff.m; sourceTree = "<group>"; };
 		D2E526CE24E3F84C00ACD06F /* HHManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHManager.h; sourceTree = "<group>"; };
 		D2E526CF24E3F84C00ACD06F /* HHManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHManager.m; sourceTree = "<group>"; };
+		D2E526D224E4BD1D00ACD06F /* TestMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMessage.h; sourceTree = "<group>"; };
+		D2E526D324E4BD1D00ACD06F /* TestMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMessage.m; sourceTree = "<group>"; };
+		D2E526D524E4C84300ACD06F /* BackupTestMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackupTestMessage.h; sourceTree = "<group>"; };
+		D2E526D624E4C84300ACD06F /* BackupTestMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackupTestMessage.m; sourceTree = "<group>"; };
+		D2E526D924E511D700ACD06F /* BackupTestMessageOther.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackupTestMessageOther.h; sourceTree = "<group>"; };
+		D2E526DA24E511D700ACD06F /* BackupTestMessageOther.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackupTestMessageOther.m; sourceTree = "<group>"; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
 		E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-block-trampolines.mm"; path = "runtime/objc-block-trampolines.mm"; sourceTree = "<group>"; };
@@ -399,6 +408,12 @@
 				D2E526CC24E3F7B700ACD06F /* HHStaff.m */,
 				D2E526CE24E3F84C00ACD06F /* HHManager.h */,
 				D2E526CF24E3F84C00ACD06F /* HHManager.m */,
+				D2E526D224E4BD1D00ACD06F /* TestMessage.h */,
+				D2E526D324E4BD1D00ACD06F /* TestMessage.m */,
+				D2E526D524E4C84300ACD06F /* BackupTestMessage.h */,
+				D2E526D624E4C84300ACD06F /* BackupTestMessage.m */,
+				D2E526D924E511D700ACD06F /* BackupTestMessageOther.h */,
+				D2E526DA24E511D700ACD06F /* BackupTestMessageOther.m */,
 			);
 			path = KCObjc;
 			sourceTree = "<group>";
@@ -739,6 +754,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2E526CD24E3F7B700ACD06F /* HHStaff.m in Sources */,
+				D2E526D724E4C84300ACD06F /* BackupTestMessage.m in Sources */,
+				D2E526DB24E511D700ACD06F /* BackupTestMessageOther.m in Sources */,
+				D2E526D424E4BD1D00ACD06F /* TestMessage.m in Sources */,
 				D2E526D024E3F84C00ACD06F /* HHManager.m in Sources */,
 				7A88076124CACD200070C15B /* main.m in Sources */,
 				7A88076724CACD8C0070C15B /* LGPerson.m in Sources */,
