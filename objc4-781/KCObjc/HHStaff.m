@@ -9,12 +9,12 @@
 
 @implementation HHStaff
 
-- (void)doInstanceStaffWork { // 对象方法
-    NSLog(@"📢📢📢 %s", __FUNCTION__);
-}
-
-+ (void)doClassStaffWord { // 类方法
-    NSLog(@"📢📢📢 %s", __FUNCTION__);
-}
+//- (void)doInstanceStaffWork { // 对象方法
+//    NSLog(@"📢📢📢 %s self = %@", __FUNCTION__, self);
+//}
+//
+//+ (void)doClassStaffWord { // 类方法
+//    NSLog(@"📢📢📢 %s self = %@", __FUNCTION__, self);
+//}
 
 @end

@@ -1695,8 +1695,7 @@ _objc_rootRelease(id obj)
 }
 
 
-// Call [cls alloc] or [cls allocWithZone:nil], with appropriate 
-// shortcutting optimizations.
+// Call [cls alloc] or [cls allocWithZone:nil], with appropriate shortcutting optimizations.
 static ALWAYS_INLINE id
 callAlloc(Class cls, bool checkNil, bool allocWithZone=false)
 {

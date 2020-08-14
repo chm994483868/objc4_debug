@@ -10,11 +10,11 @@
 @implementation HHManager
 
 - (void)doInstanceManagerWork { // 对象方法
-    NSLog(@"📢📢📢 %s", __FUNCTION__);
+    NSLog(@"📢📢📢 %s self = %@", __FUNCTION__, self);
 }
 
 + (void)doClassManagerWork { // 类方法
-    NSLog(@"📢📢📢 %s", __FUNCTION__);
+    NSLog(@"📢📢📢 %s self = %@", __FUNCTION__, self);
 }
 
 @end

@@ -51,7 +51,6 @@
 		75A95051202BAA9A00D7D56F /* objc-locks.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A95050202BAA9A00D7D56F /* objc-locks.h */; };
 		75A95053202BAC4100D7D56F /* objc-lockdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A95052202BAC4100D7D56F /* objc-lockdebug.h */; };
 		7A88076124CACD200070C15B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A88076024CACD200070C15B /* main.m */; };
-		7A88076724CACD8C0070C15B /* LGPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A88076624CACD8C0070C15B /* LGPerson.m */; };
 		8306440920D24A5D00E356D2 /* objc-block-trampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 8306440620D24A3E00E356D2 /* objc-block-trampolines.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		830F2A740D737FB800392440 /* objc-msg-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A690D737FB800392440 /* objc-msg-arm.s */; };
 		830F2A750D737FB900392440 /* objc-msg-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A6A0D737FB800392440 /* objc-msg-i386.s */; };
@@ -131,6 +130,7 @@
 		87BB4EA70EC39854005D08E1 /* objc-probes.d in Sources */ = {isa = PBXBuildFile; fileRef = 87BB4E900EC39633005D08E1 /* objc-probes.d */; };
 		9672F7EE14D5F488007CEC96 /* NSObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9672F7ED14D5F488007CEC96 /* NSObject.mm */; };
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
+		D21333F024E613E700A6175C /* NSObject+Extern.m in Sources */ = {isa = PBXBuildFile; fileRef = D21333EF24E613E700A6175C /* NSObject+Extern.m */; };
 		D2E526CD24E3F7B700ACD06F /* HHStaff.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526CC24E3F7B700ACD06F /* HHStaff.m */; };
 		D2E526D024E3F84C00ACD06F /* HHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526CF24E3F84C00ACD06F /* HHManager.m */; };
 		D2E526D424E4BD1D00ACD06F /* TestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E526D324E4BD1D00ACD06F /* TestMessage.m */; };
@@ -190,8 +190,6 @@
 		75A95052202BAC4100D7D56F /* objc-lockdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-lockdebug.h"; path = "runtime/objc-lockdebug.h"; sourceTree = "<group>"; };
 		7A88075E24CACD200070C15B /* KCObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KCObjc; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A88076024CACD200070C15B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7A88076524CACD8C0070C15B /* LGPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPerson.h; sourceTree = "<group>"; };
-		7A88076624CACD8C0070C15B /* LGPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPerson.m; sourceTree = "<group>"; };
 		8306440620D24A3E00E356D2 /* objc-block-trampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-block-trampolines.h"; path = "runtime/objc-block-trampolines.h"; sourceTree = "<group>"; };
 		830F2A690D737FB800392440 /* objc-msg-arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-arm.s"; path = "runtime/Messengers.subproj/objc-msg-arm.s"; sourceTree = "<group>"; };
 		830F2A6A0D737FB800392440 /* objc-msg-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-i386.s"; path = "runtime/Messengers.subproj/objc-msg-i386.s"; sourceTree = "<group>"; };
@@ -276,6 +274,8 @@
 		9672F7ED14D5F488007CEC96 /* NSObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NSObject.mm; path = runtime/NSObject.mm; sourceTree = "<group>"; };
 		BC8B5D1212D3D48100C78A5B /* libauto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauto.dylib; path = /usr/lib/libauto.dylib; sourceTree = "<absolute>"; };
 		C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DenseMapExtras.h; path = runtime/DenseMapExtras.h; sourceTree = "<group>"; };
+		D21333EE24E613E700A6175C /* NSObject+Extern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extern.h"; sourceTree = "<group>"; };
+		D21333EF24E613E700A6175C /* NSObject+Extern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extern.m"; sourceTree = "<group>"; };
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E526CB24E3F7B700ACD06F /* HHStaff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHStaff.h; sourceTree = "<group>"; };
 		D2E526CC24E3F7B700ACD06F /* HHStaff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStaff.m; sourceTree = "<group>"; };
@@ -403,12 +403,12 @@
 			children = (
 				D2E526DC24E53F6E00ACD06F /* Forward */,
 				7A88076024CACD200070C15B /* main.m */,
-				7A88076524CACD8C0070C15B /* LGPerson.h */,
-				7A88076624CACD8C0070C15B /* LGPerson.m */,
 				D2E526CB24E3F7B700ACD06F /* HHStaff.h */,
 				D2E526CC24E3F7B700ACD06F /* HHStaff.m */,
 				D2E526CE24E3F84C00ACD06F /* HHManager.h */,
 				D2E526CF24E3F84C00ACD06F /* HHManager.m */,
+				D21333EE24E613E700A6175C /* NSObject+Extern.h */,
+				D21333EF24E613E700A6175C /* NSObject+Extern.m */,
 			);
 			path = KCObjc;
 			sourceTree = "<group>";
@@ -766,8 +766,8 @@
 				D2E526DB24E511D700ACD06F /* BackupTestMessageOther.m in Sources */,
 				D2E526D424E4BD1D00ACD06F /* TestMessage.m in Sources */,
 				D2E526D024E3F84C00ACD06F /* HHManager.m in Sources */,
+				D21333F024E613E700A6175C /* NSObject+Extern.m in Sources */,
 				7A88076124CACD200070C15B /* main.m in Sources */,
-				7A88076724CACD8C0070C15B /* LGPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,6 +1023,7 @@
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CLANG_OBJC_RUNTIME = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
@@ -1069,6 +1070,7 @@
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CLANG_OBJC_RUNTIME = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
