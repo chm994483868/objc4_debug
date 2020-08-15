@@ -1708,9 +1708,9 @@ callAlloc(Class cls, bool checkNil, bool allocWithZone=false)
 
     // No shortcuts available.
     if (allocWithZone) {
-        return ((id(*)(id, SEL, struct _NSZone *))objc_msgSend)(cls, @selector(allocWithZone:), nil);
+        return ((id(*)(id, SEL, struct _NSZone *))objc_msgSend)(cls, @selector(allocWithZone:), nil); // 对应如果重写了类的 allocWithZone 函数，则去类的方法列表里面去找方法实现
     }
-    return ((id(*)(id, SEL))objc_msgSend)(cls, @selector(alloc));
+    return ((id(*)(id, SEL))objc_msgSend)(cls, @selector(alloc)); // 对应了如果重写了类的 alloc 函数，则去类的方法列表里面找方法实现
 }
 
 

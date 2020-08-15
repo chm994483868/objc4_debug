@@ -7,6 +7,16 @@
 
 #import "HHStaff.h"
 
+@interface HHStaff ()
+
+//{
+//    NSInteger intIn;
+//}
+//
+//@property (nonatomic, assign) char cIn;
+
+@end
+
 @implementation HHStaff
 
 //- (void)doInstanceStaffWork { // 对象方法
